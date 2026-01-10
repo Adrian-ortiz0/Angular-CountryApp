@@ -1,9 +1,15 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { SearchInput } from "../../components/search-input/search-input";
+import { CountryList } from "../../components/country-list/country-list";
 
 @Component({
   selector: 'app-by-capital-page',
-  imports: [],
+  imports: [SearchInput, CountryList],
   templateUrl: './by-capital-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ByCapitalPage { }
+export class ByCapitalPage {
+  onSearch(value: string) {
+    console.log(value);
+  }
+ }
