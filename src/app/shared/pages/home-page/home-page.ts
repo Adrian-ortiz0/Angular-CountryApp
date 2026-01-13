@@ -4,7 +4,7 @@ import { Footer } from "../footer/footer";
 
 @Component({
   selector: 'app-home-page',
-  imports: [RouterLink, Footer],
+  imports: [RouterLink],
   templateUrl: './home-page.html',
 })
 export class HomePage { }
