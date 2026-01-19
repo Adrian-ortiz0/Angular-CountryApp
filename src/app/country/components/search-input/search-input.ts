@@ -8,7 +8,7 @@ import { Component, effect, input, output, signal } from '@angular/core';
 export class SearchInput {
   placeholder = input('Buscar...')
   value = output<string>();
-  debounceTime = input(500);
+  debounceTime = input(300);
 
   inputValue = signal<string>('');
 
